@@ -17,6 +17,11 @@ public class Chocolate extends Candy
 		this.setMySecretCandyNumber(5);
 	}
 	
+	public void melt()
+	{
+		System.out.println("The chocolate has melted!");
+	}
+	
 	public void printChocolate()
 	{
 		System.out.println(this.getName());
