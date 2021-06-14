@@ -19,6 +19,16 @@ public class HardCandy extends Candy
 		this.name = "Some kind of hard candy";
 		this.numberOfCalories = 50.0;
 		this.setMySecretCandyNumber(2);
+		this.flavor = "Butterscotch";
+	}
+	
+	public HardCandy(String name, double numberOfCalories, int mySecretNum,
+			String flavor)
+	{
+		this.name = name;
+		this.numberOfCalories = numberOfCalories;
+		this.setMySecretCandyNumber(mySecretNum);
+		this.flavor = flavor;
 	}
 	
 	public void breakApart()
@@ -30,6 +40,17 @@ public class HardCandy extends Candy
 	{
 		return "Name: "+this.getName()+
 				" Calories: "+this.getNumberOfCalories()+
-				" SecretNumber: "+this.getMySecretCandyNumber();
+				" SecretNumber: "+this.getMySecretCandyNumber()+
+				" Flavor: "+this.flavor;
+	}
+
+	public String getFlavor()
+	{
+		return flavor;
+	}
+
+	public void setFlavor(String flavor)
+	{
+		this.flavor = flavor;
 	}
 }
